@@ -8,7 +8,7 @@ RUN  chmod 755 /run.sh \
 RUN  yum clean all \
   && yum update -y \
   && yum install -y \
-    bacula-storage bacula-console bacula-client vim atop dstat
+    bacula-storage bacula-console bacula-client vim atop dstat mtx
 
 EXPOSE 9103
 VOLUME ["/etc/bacula","/data"]
